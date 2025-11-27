@@ -72,11 +72,32 @@
       font-size: 1.6rem;
     }
 
+    /* Logo Container */
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .logo-image {
+      max-width: 200px;
+      padding: 12px;
+      background-color: var(--white);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .logo-image img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     /* Hero Section */
     .hero {
       background: var(--gradient);
       color: var(--white);
-      padding: 80px 20px 120px;
+      padding: 60px 20px 120px;
       text-align: center;
       position: relative;
       overflow: hidden;
@@ -300,19 +321,21 @@
         padding: 10px 16px;
         font-size: 0.85rem;
       }
+      
+      .logo-image {
+        max-width: 160px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header class="header">
-    <div class="header-content">
-      <div class="logo">
-        <i class="fas fa-bolt"></i>
-        <span>Nyota</span>
-      </div>
+
+  <div class="logo-container">
+    <div class="logo-image">
+      <img src="icons/logo.png" alt="Nyota Logo">
     </div>
-  </header>
+  </div>
 
   <section class="hero">
     <div class="hero-content">
